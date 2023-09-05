@@ -2,6 +2,13 @@ import Filme from './../filme/Filme'
 import './Main.css'
 export default function Main(){
     return(
+              <>
+                     <div>
+                            <input type="text" className='botao_pesquisa' placeholder='pesquise um f' />
+                            <p>digitado:</p>
+                     </div>              
+              
+
         <main className="content-main">
             <Filme titulo='Barbie' 
                    sinopse='Depois de ser expulsa da 
@@ -59,5 +66,6 @@ export default function Main(){
                    />
             
         </main>
+        </>
     )
 }

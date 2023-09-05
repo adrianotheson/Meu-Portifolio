@@ -13,7 +13,6 @@ function Filme(props:FilmeProps){
             <div className="text-barbie">
                 <h1>{props.titulo}</h1>
                 <p className="sinopse">{props.sinopse}</p>
-                <p>adri</p>
             </div>
         </div>
     )
