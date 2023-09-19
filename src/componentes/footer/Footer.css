@@ -1,0 +1,26 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .footer {
+    background-color: rgb(63, 58, 58);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .contato {
+    text-align: center;
+  }
+  .reso {
+    margin-top: 5px;
+  }
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+
