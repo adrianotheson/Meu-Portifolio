@@ -44,10 +44,10 @@ export default function Main() {
     return (
         <>
             <div className="campo_pesquisa">
-                <p>Busque um filme</p>
+                <p>Busque um Projeto</p>
                 <input type="text" 
                        className='botao_pesquisa'
-                       placeholder='Pesquise um Filme'
+                       placeholder='Pesquise'
                        onChange={TrataTexto} />
                 {texto && <p>Resultados Para: {texto} </p>}
             </div>
@@ -55,6 +55,17 @@ export default function Main() {
                 {/* 
                     Use algo do vetor para tentar criar os filmes 
                 */}
+                {
+                    filmes.filter((filme)=>filme.titulo.toLowerCase().includes(texto)).map(
+                        (filme)=>
+                            <Filme 
+                                key={filme.id}
+                                sinopse={filme.sinopse}
+                                titulo={filme.titulo}
+                                imagem={filme.imagem}
+                            />
+                    )
+                }
 
 
                 

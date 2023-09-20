@@ -9,8 +9,11 @@ export default function Footer() {
           <div className="reso">
             <p>
               Email:{" "}
-              <a className="link" href="mailto:Adriano.Filhoemail@example.com">
-                Adriano.Filhoemail@example.com
+              <a
+                className="link"
+                href="mailto:adriano.filho@estudante.ifms.edu.br"
+              >
+                Adriano.Filho@estudante.ifms.edu.br
               </a>
             </p>
           </div>
@@ -19,22 +22,34 @@ export default function Footer() {
               Instagram:{" "}
               <a
                 className="link"
-                href="https://www.instagram.com/Adriano.Filho_perfil"
+                href="https://www.instagram.com/AdrianoVieiraCairesFilho"
                 target="_blank"
               >
-                @Adriano.Filho_perfil
+                AdrianoVieiraCairesFilho
               </a>
             </p>
           </div>
           <div className="reso">
             <p>
-              Website:{" "}
+              Fecebook:{" "}
               <a
                 className="link"
-                href="http://www.AdrianoMangasite.com"
+                href="https://www.facebook.com/AdrianoVieiraCairesFilho"
                 target="_blank"
               >
-                www.AdrianoMangasite.com
+                Adriano Vieira Caires Filho
+              </a>
+            </p>
+          </div>
+          <div className="reso">
+            <p>
+              Linkedim:{" "}
+              <a
+                className="link"
+                href="https://www.linkedin.com/AdrianoVieiraCairesFilho"
+                target="_blank"
+              >
+                Adriano Vieira Caires Filho
               </a>
             </p>
           </div>
