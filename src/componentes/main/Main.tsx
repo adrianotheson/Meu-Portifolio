@@ -43,6 +43,7 @@ export default function Main() {
     }
     return (
         <>
+        <div className='fundo'>
             <div className="campo_pesquisa">
                 <p>Busque um Projeto</p>
                 <input type="text" 
@@ -125,6 +126,7 @@ export default function Main() {
                 /> */}
 
             </main>
+        </div>
         </>
     )
 }

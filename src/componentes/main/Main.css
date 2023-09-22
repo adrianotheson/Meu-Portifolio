@@ -1,3 +1,8 @@
+.fundo{
+    background-color: #498233;
+
+}
+
 .content-main{
     display: flex;
     gap: 15px;
