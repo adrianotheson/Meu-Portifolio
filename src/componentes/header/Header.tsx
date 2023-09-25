@@ -12,14 +12,12 @@ function Header(){
                         <Link texto='Casa'/>
                     </li>
                     <li>
-                        <Link texto='Trabalho'/>
+                        <Link texto='Trabalhos'/>
                     </li>
                     <li>
                         <Link texto='Preferencias'/>
                     </li>
-                    <li>
-                        <Link texto='Contato'/>
-                    </li>
+                    
                 </ul>
             </nav>
         </header>

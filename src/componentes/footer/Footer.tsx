@@ -5,7 +5,7 @@ export default function Footer() {
     <body>
       <div className="footer">
         <div className="contato">
-          <h1>Contato</h1>
+          <h1>Contatos</h1>
           <div className="reso">
             <p>
               Email:{" "}
