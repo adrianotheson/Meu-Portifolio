@@ -17,6 +17,9 @@ function Header(){
                     <li>
                         <Link texto='Preferencias'/>
                     </li>
+                    <li>
+                        <Link texto='Contatos'/>
+                    </li>
                     
                 </ul>
             </nav>
