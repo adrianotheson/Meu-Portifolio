@@ -1,5 +1,5 @@
 import './Contatos.css'
-import LinkNav from '../LinkNav/LinkNav'
+// import LinkNav from '../LinkNav/LinkNav'
 
 
 export default function meucontato(){
