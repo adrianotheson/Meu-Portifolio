@@ -1,11 +1,36 @@
+import Header from './componentes/header/Header'
+import Main from './componentes/main/Main'
+import Footer from './componentes/footer/Footer'
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import Contatos from './componentes/contatos/Contatos'
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element: <>
+    <Header/><Main/><Footer/>
+    </>
+
+  },
+  {
+    path:"/contatos",
+    element: <Contatos/>
+
+  },
+ 
+  
+])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
-    <Contatos/>
+
+    <RouterProvider router={router}/>
   </React.StrictMode>,
 )

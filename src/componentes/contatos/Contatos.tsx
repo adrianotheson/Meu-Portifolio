@@ -1,8 +1,10 @@
 import './Contatos.css'
+import LinkNav from '../LinkNav/LinkNav'
 
 
-
-<main>
+export default function meucontato(){
+    return (
+        <main>
 
     <li> <a href="">
             <img src="" alt="" />
@@ -54,7 +56,5 @@ import './Contatos.css'
     </li>
     
 </main>
-
-
-
-
+    )
+}
