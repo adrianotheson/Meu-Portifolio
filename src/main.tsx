@@ -14,14 +14,18 @@ import {
 const router = createBrowserRouter([
   {
     path:"/",
-    element: <>
+    element: 
+    <>
     <Header/><Main/><Footer/>
     </>
 
   },
   {
     path:"/contatos",
-    element: <Contatos/>
+    element: 
+    <>
+    <Header/><Contatos/><Footer/>
+    </>
 
   },
  
