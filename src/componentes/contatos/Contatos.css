@@ -1,0 +1,24 @@
+.fundo{
+    background-color: #498233;
+
+}
+
+.content-main{
+    display: flex;
+    gap: 15px;
+    padding: 15px 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.campo_pesquisa{
+    padding: 15px 100px;
+}
+.botao_pesquisa{
+    height: 30px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+}
+
+
+
