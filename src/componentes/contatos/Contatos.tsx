@@ -91,13 +91,18 @@ export default function Main() {
           <button type='submit'>Enviar</button>
         </div>
       </form>
+
+
+              <div>Nome: {formData.nome}</div>
+              <div>Email: {formData.email}</div>
+              <div>CPF: {formData.cpf}</div>
+              <div>Como soube: {formData.comoSoube}</div>
+
+
     </div>
         </div>
 
-        <div>Nome: {formData.nome}</div>
-        <div>Email: {formData.email}</div>
-        <div>CPF: {formData.cpf}</div>
-        <div>Como soube: {formData.comoSoube}</div>
+        
         </>
     )
 }

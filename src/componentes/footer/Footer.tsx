@@ -1,60 +1,52 @@
 import "./Footer.css";
 
-export default function Footer() {
-  return (
-    <body>
-      <div className="footer">
-        <div className="contato">
-          <h1>Contatos</h1>
-          <div className="reso">
-            <p>
-              Email:{" "}
-              <a
-                className="link"
-                href="mailto:adriano.filho@estudante.ifms.edu.br"
-              >
-                Adriano.Filho@estudante.ifms.edu.br
-              </a>
-            </p>
-          </div>
-          <div className="reso">
-            <p>
-              Instagram:{" "}
-              <a
-                className="link"
-                href="https://www.instagram.com/AdrianoVieiraCairesFilho"
-                target="_blank"
-              >
-                AdrianoVieiraCairesFilho
-              </a>
-            </p>
-          </div>
-          <div className="reso">
-            <p>
-              Fecebook:{" "}
-              <a
-                className="link"
-                href="https://www.facebook.com/AdrianoVieiraCairesFilho"
-                target="_blank"
-              >
-                Adriano Vieira Caires Filho
-              </a>
-            </p>
-          </div>
-          <div className="reso">
-            <p>
-              Linkedim:{" "}
-              <a
-                className="link"
-                href="https://www.linkedin.com/AdrianoVieiraCairesFilho"
-                target="_blank"
-              >
-                Adriano Vieira Caires Filho
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </body>
-  );
+interface SocialLink {
+  label: string;
+  url: string;
+  text: string;
 }
+
+const socialLinks: SocialLink[] = [
+  {
+    label: 'Email',
+    url: 'mailto:adriano.filho@estudante.ifms.edu.br',
+    text: 'Adriano.Filho@estudante.ifms.edu.br',
+  },
+  {
+    label: 'Instagram',
+    url: 'https://www.instagram.com/AdrianoVieiraCairesFilho',
+    text: 'AdrianoVieiraCairesFilho',
+  },
+  {
+    label: 'Facebook',
+    url: 'https://www.facebook.com/AdrianoVieiraCairesFilho',
+    text: 'Adriano Vieira Caires Filho',
+  },
+  {
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/AdrianoVieiraCairesFilho',
+    text: 'Adriano Vieira Caires Filho',
+  },
+];
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="footer">
+      <div className="contato">
+        <h1>Contatos</h1>
+        {socialLinks.map((link, index) => (
+          <div className="reso" key={index}>
+            <p>
+              {link.label}:{' '}
+              <a className="link" href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.text}
+              </a>
+            </p>
+          </div>
+        ))}
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
